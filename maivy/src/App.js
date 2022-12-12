@@ -8,13 +8,13 @@ function App() {
 
 
   const clickHandler = () => {    
-    const img = document.getElementById("img")
-    const height = img.clientWidth
-    img.style.width = (height+10) + "px"
-    if(height>=350){
-      setVisibility("visible")
-    }
-
+    // const img = document.getElementById("img")
+    // const height = img.clientWidth
+    // img.style.width = (height+10) + "px"
+    // if(height>=350){
+    //   setVisibility("visible")
+    // }
+    setVisibility("visible")
   }
 
   return (
@@ -30,8 +30,8 @@ function App() {
 
         </div>
       </body>
-      <footer>
-        <img src="https://i.imgur.com/TOvrK6s.png" alt="egghead2" id="img2" width={"100px"} style={{visibility:`${visibility}`}}></img>
+      <footer>        
+        <img src="https://i.imgur.com/TOvrK6s.png" alt="egghead2" id="img2" width={"100px"} style={{visibility:`${visibility}`}} onClick={()=>setVisibility("hidden")}></img>
       </footer>
 
     </div>
