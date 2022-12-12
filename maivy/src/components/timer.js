@@ -28,7 +28,7 @@ export const Timer = () => {
 
     return (
         <div className="App">
-            <h2>{happyness()}</h2>
+            <h2 style={{fontSize:"70px"}}>{happyness()}</h2>
         </div>
     )
 }
