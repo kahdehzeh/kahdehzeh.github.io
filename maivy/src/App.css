@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  cursor: url('../public/egghead2.png'), auto;  
+  cursor: url('../public/favicon-32x32.png'), auto;  
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
