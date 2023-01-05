@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react"
 
 export const Timer = () => {
 
-    const deadline = new Date("jan 13, 2023 23:59:59").getTime();
+    const deadline = new Date("jan 14, 2023 08:59:59").getTime();
 
     const now = new Date().getTime();
     const t = deadline - now;
@@ -16,10 +16,10 @@ export const Timer = () => {
         } else if (days >= 10) {
             return days + " days :(("
         } else if (days > 2) {
-            return `only ${days - 1} more sleeps :)`
-        } else if (days === 2) {
-            return "Baby is back tomorrow :))"
+            return `only ${days} more sleeps :)`
         } else if (days === 1) {
+            return "Baby is back tomorrow :))"
+        } else {
             return "Baby is back today :))))"
         }
     }
